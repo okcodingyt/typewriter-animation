@@ -1,1 +1,1 @@
-# typewriter-animation
+# Typewriter Animation Using HTML & CSS
