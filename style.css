@@ -1,0 +1,61 @@
+/*--------------- basic styling --------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+/*--------------- container --------------- */
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h1 {
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: -2px;
+  
+}
+
+/*--------------- typewriter effect --------------- */
+.line {
+  width: 24em;
+  top: 50%;
+  margin: auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.anim-typewriter {
+  animation: typewriter 4s steps(40) 1s 1 normal both, /* 4s is speed 40 is fps 1s is start time 1 is repeat normal is forward animation*/
+  blinkTextCursor 700ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+        width: 0;
+  }
+  to {
+        width: 19em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+        border-right-color: transparent;
+  }
+}
+
+
